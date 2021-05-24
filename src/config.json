@@ -1,0 +1,44 @@
+{
+  "name": "Dynatrace",
+  "type": "executer",
+  "execProgram": "node",
+  "main": "app.js",
+  "version": "1.0.0",
+  "description":"Kaholo integration with Dynatrace API",
+  "imgUrl": "logo.png",
+  "settings":[
+    {
+      "name":"url",
+      "viewName": "Server URL",
+      "type":"string"
+    },
+    {
+      "name": "apiToken",
+      "viewName": "API Token",
+      "type": "vault"
+    }
+  ],
+  "methods": [
+    {
+      "name": "getProblem",
+      "viewName": "Get Problem",
+      "params": [
+        {
+          "name":"url",
+          "viewName": "Server URL",
+          "type":"string"
+        },
+        {
+          "name": "apiToken",
+          "viewName": "API Token",
+          "type": "vault"
+        },
+        {
+          "name": "problemId",
+          "viewName": "Problem ID",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}

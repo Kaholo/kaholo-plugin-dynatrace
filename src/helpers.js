@@ -11,7 +11,7 @@ async function sendToDynatrace(action, settings, httpMethod, path, body){
         headers: {  'Authorization': `Api-token ${apiToken}`},
         redirect: 'follow'
     };
-    if (httpMethod === "POST" && body){
+    if (body){
         opts.body = JSON.stringify(body);
         opts.headers['Content-Type'] = 'application/json';
     }

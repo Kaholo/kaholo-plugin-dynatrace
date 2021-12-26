@@ -3,14 +3,14 @@
   "type": "executer",
   "execProgram": "node",
   "main": "app.js",
-  "version": "1.0.1",
-  "description":"Kaholo integration with Dynatrace API",
+  "version": "1.0.3",
+  "description": "Kaholo integration with Dynatrace API",
   "imgUrl": "logo.png",
-  "settings":[
+  "settings": [
     {
-      "name":"url",
+      "name": "url",
       "viewName": "Server URL",
-      "type":"string"
+      "type": "string"
     },
     {
       "name": "apiToken",
@@ -24,9 +24,9 @@
       "viewName": "Get Problem",
       "params": [
         {
-          "name":"url",
+          "name": "url",
           "viewName": "Server URL",
-          "type":"string"
+          "type": "string"
         },
         {
           "name": "apiToken",
@@ -40,5 +40,6 @@
         }
       ]
     }
-  ]
+  ],
+  "category": "MONITORING"
 }
